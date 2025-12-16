@@ -14,7 +14,7 @@
 <body onclick="playMusic()">
 
 <audio id="bg-music" loop>
-       <audio src="audio/song.mp3" type="audio/mpeg">
+       <source src="audio/song.mp3" type="audio/mpeg">
    </audio>
 
 
@@ -65,7 +65,7 @@ updateDateTime();
 </script>
 
 
-<button id="music-toggle" onclick="toggleMusic()" 
+<button id="music-toggle">🎵 </button> 
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -136,7 +136,7 @@ function toggleMusic(){
    <div class="profile-wrapper">
 
      <div class="profile-card">
-        <img src="images/me.jpg" alt=" me " width= "280" height="175" border="1"  HSPACE=50 align= center;>
+        <img src="images/me.jpg" alt=" me " class="profile-img">
    <div class="container">
     <h4><b> Nurin Syazwani Jasni </b></h4>
   
@@ -210,5 +210,6 @@ function toggleMusic(){
 
 
 </html>
+
 
 

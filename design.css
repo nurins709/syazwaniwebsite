@@ -237,7 +237,7 @@ sup {
 /* IMAGE BACKGROUND*/
 
 .home-background {
-  background-image: url("background.JPEG");
+  background-image: url("images/background.jpg");
   position: absolute;
   top: 0; left: 0;
   width: 100%;
@@ -1191,4 +1191,5 @@ ul.inner-list li p {
     color: #CABA9C;
     font-size: 14px;
 }
+
 

@@ -1,0 +1,131 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="design.css" />
+<title> FAMILY </title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1><b> MY FAMILY <b></h1>
+<i><marquee>Welcome to My Resume Page. Take your time and explore &#9829! </marquee></i>
+
+</header>
+
+<nav>
+
+ <ul class="navbar">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="BIODATA.html" target="_blank">BIODATA</a></li>
+    <li><a href="EXPERIENCE.html" target="_blank">EXPERIENCE</a></li>
+    <li><a href="EDC.html" target="_blank">EDUCATION</a></li>
+    <li><a href="FAMILY.html" target="_blank">FAMILY</a></li>
+    <li><a href="GALLERY.html" target="_blank">GALLERY</a></li>
+ </ul>
+
+</nav>
+
+
+ <div id="datetime-simple"></div>
+
+  <script>
+
+function updateDateTime() {
+  const now = new Date();
+
+  const day = now.getDate();
+  const month = now.toLocaleString('en-US', { month: 'short' });
+  const year = now.getFullYear();
+  const hours = now.getHours().toString().padStart(2,'0');
+  const minutes = now.getMinutes().toString().padStart(2,'0');
+  const seconds = now.getSeconds().toString().padStart(2,'0');
+
+  document.getElementById("datetime-simple").innerText =
+    `📅 ${day} ${month} ${year} | 🕑  ${hours}:${minutes}:${seconds}`;
+}
+
+setInterval(updateDateTime, 1000);
+updateDateTime();
+
+</script>
+
+
+
+
+
+<section>
+
+<br> 
+
+
+<div class="friends-box">
+
+<div class="gallery">
+      <img src="f8.JPEG"> 
+      <img src="f7.JPEG"> 
+      <img src="f2.JPEG"> 
+   </div>
+
+<div class="gallery">
+      <img src="f4.JPEG"> 
+      <img src="f5.JPEG"> 
+      <img src="f6.JPEG"> 
+   </div>
+
+<div class="gallery">
+      <img src="f3.JPEG"> 
+      <img src="f1.JPEG"> 
+      <img src="f9.JPEG"> 
+   </div>
+
+<div class="gallery">
+      <img src="f10.JPEG"> 
+      <img src="f12.JPEG"> 
+      <img src="f11.JPEG"> 
+   </div>
+
+<div class="gallery">
+      <img src="f13.JPEG"> 
+      <img src="f14.JPEG"> 
+      <img src="f15.JPEG"> 
+   </div>
+
+<div class="gallery">
+      <img src="f16.JPEG"> 
+      <img src="f17.JPEG"> 
+      <img src="f18.JPEG"> 
+   </div>
+
+<div class="gallery">
+      <img src="f19.JPEG"> 
+      <img src="f20.JPEG"> 
+      <img src="f21.JPEG"> 
+   </div>
+
+</div>
+
+</section>
+
+<footer class="site-footer">
+    <p>© 2025 Nurin Syazwani Binti Jasni. All Rights Reserved.</p>
+    <p>Last updated: 16 December 2025</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/honeyy.ryn?igsh=Z2F1OHd2cjUyZ2s0&utm_source=qr">IG</a> |
+      <a href="https://www.tiktok.com/@weeen_sye?_r=1&_t=ZS-92EMzleQw4N">TikTok</a> |
+      <a href="https://wa.me/601116855018">WhatsApp</a>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,293 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="design.css" />
+	<title> EDC </title> 
+
+         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head> 
+
+ 
+<body>
+
+
+<header>
+<h1><b> EDUCATION </b></h1>
+<i><marquee>Welcome to My Resume Page. Take your time and explore &#9829! </marquee></i>
+</header>
+
+
+
+
+<nav>
+
+ <ul class="navbar">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="BIODATA.html" target="_blank">BIODATA</a></li>
+    <li><a href="EXPERIENCE.html" target="_blank">EXPERIENCE</a></li>
+    <li><a href="EDC.html" target="_blank">EDUCATION</a></li>
+    <li><a href="FAMILY.html" target="_blank">FAMILY</a></li>
+    <li><a href="GALLERY.html" target="_blank">GALLERY</a></li>
+    <li><a href="ENTERTAINMENT.html" target="_blank">ENTERTAINMENT</a></li>
+
+ </ul>
+
+</nav>
+
+ <div id="datetime-simple"></div>
+
+  <script>
+
+function updateDateTime() {
+  const now = new Date();
+
+  const day = now.getDate();
+  const month = now.toLocaleString('en-US', { month: 'short' });
+  const year = now.getFullYear();
+  const hours = now.getHours().toString().padStart(2,'0');
+  const minutes = now.getMinutes().toString().padStart(2,'0');
+  const seconds = now.getSeconds().toString().padStart(2,'0');
+
+  document.getElementById("datetime-simple").innerText =
+    `📅 ${day} ${month} ${year} | 🕑  ${hours}:${minutes}:${seconds}`;
+}
+
+setInterval(updateDateTime, 1000);
+updateDateTime();
+
+</script>
+
+
+
+<section> 
+
+<div class="achievement-box">
+
+<h2> Academic Achievement </h2>
+
+<br> 
+
+<h3> SPM Result (2023) </h3>
+<table class="achievement-table">
+  <tr>
+      <th> Subject</th>
+      <th> Grade </th>
+  </tr> 
+
+  <tr>
+     <td>Bahasa Melayu</td>
+     <td>A</td>
+  </tr>
+
+  <tr>
+     <td> Bahasa Inggeris </td>
+     <td> A-</td>
+  </tr>
+
+   <tr>   
+     <td> Sejarah </td>
+     <td> A- </td>
+  </tr>
+
+  <tr>
+     <td>Mathematics</td>
+     <td>B</td>
+  </tr>
+ 
+  <tr>
+     <td>Science</td>
+     <td>A</td>
+  </tr>
+  
+  <tr>
+     <td>Bahasa Arab</td>
+     <td>B</td>
+  </tr>
+
+ <tr>
+     <td>Ekonomi</td>
+     <td>A</td>
+  </tr>
+
+  <tr>
+     <td>Pendidikan AL-Quran Sunnah</td>
+     <td>A-</td>
+  </tr>
+
+  <tr>
+     <td>Pendidikan Syariah Islamiyah</td>
+     <td>B+</td>
+  </tr>
+</table>   
+
+<br>
+
+<p class= "table-note"> &#127941 Recognized as one of the Top 14 SPM 2022 students with near straight A's </p>
+   
+<br> 
+
+<h3> Dean's List (Diploma in Information Management)</h3>
+
+<br> 
+
+   <table class="achievement-table">
+  <tr>
+      <th> Semester</th>
+      <th> GPA</th>
+      <th>Status</th> 
+  </tr> 
+
+  <tr>
+     <td>Semester 1</td>
+     <td>3.78</td>
+     <td>Dean's List</td>
+  </tr>
+
+  <tr>
+     <td>Semester 2</td>
+     <td>3.56</td>
+     <td>Dean's List</td>
+  </tr>
+
+  <tr>
+     <td>Semester 3</td>
+     <td>3.69</td>
+     <td>Dean's List</td>
+  </tr>
+
+  <tr>
+     <td>Semester 4</td>
+     <td>3.72</td>
+     <td>Dean's List</td>
+  </tr>
+</table>
+
+</div>
+   
+
+<br>
+
+
+<div class="education-box">
+
+<h2> Education Journey </h2>
+
+<br>
+
+  <div class="education-row"> 
+  <div class="education-map">
+   <h3> Primary School Location </h3>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510326.6014845512!2d102.62388725884698!3d2.18156116798277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d05ea1210584fd%3A0x921bcee81775f19f!2sSK%20Pintas%20Puding!5e0!3m2!1sen!2smy!4v1765381570370!5m2!1sen!2smy" 
+      width="100%"
+      height="400"
+      style="border:0; border-radius: 10px; box-shadow:0 4px 8px rgba(0,0,0,0.2);"
+      allowfullscreen loading="lazy">
+  </iframe>
+</div>
+
+  <div class="school-image">
+     <h3>School Photo</h3>
+     <img src="sk.JPEG" alt="SK PINTAS PUDING">
+  </div>
+
+  </div>
+
+
+<ol>
+   <li>
+     <h3> Primary Education</h3>
+
+     <ul>
+       <li>School Name: Sk Pintas Puding, Parit Raja </li> 
+       <li>Location : SK Pintas Puding, Jln Kluang, 86400 Batu Pahat, Johor</li> 
+       <li>Year : 2014 - 2018</li>
+     </ul>
+  </li>
+</ol>
+
+
+
+
+ <div class="education-row"> 
+
+ <div class="education-map">
+
+   <h3> Secondary School Location </h3>
+   <br>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510430.25285700825!2d102.47394561767577!3d1.8510458670210348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d0596f5cb1a4f7%3A0xe3da63914a9bb041!2sSMK%20Seri%20Gading!5e0!3m2!1sen!2smy!4v1765378028131!5m2!1sen!2smy" 
+      width="100%"
+      height="400"
+      style="border:0; border-radius: 10px; box-shadow:0 4px 8px rgba(0,0,0,0.2);" 
+      allowfullscreen loading="lazy">
+  </iframe>
+</div>
+
+
+ <div class="school-image">
+     <h3>School Photo</h3>
+     <img src="smk.JPEG" alt="SEGA">
+  </div>
+</div>
+
+<ol>
+   <li>
+     <h3> Secondary Education</h3>
+ 
+     <ul>
+       <li>School Name: SMK SERI GADING </li> 
+       <li>Location : SMK Seri Gading, 50, Kampung Tunggul Hitam, 83300 Parit Raja, Johor</li> 
+       <li>Year : 2019 - 2023 </li>
+     </ul>
+   </li> 
+</ol>
+
+
+<div class="education-row"> 
+
+  <div class="education-map">
+
+     <h3> Institution Location </h3>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15944.22946814114!2d102.71127820014961!3d2.487964401736397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31ce2c6ce929a871%3A0xc0dfa5fe6922a589!2sUiTM%20Cawangan%20Johor%2C%20Kampus%20Segamat!5e0!3m2!1sen!2smy!4v1765381486951!5m2!1sen!2smy"
+      width="100%"
+      height="400"
+      style="border:0; border-radius: 10px; box-shadow:0 4px 8px rgba(0,0,0,0.2);"
+      allowfullscreen loading="lazy">
+    </iframe>
+  </div>
+
+  <div class="school-image">
+     <h3>School Photo</h3>
+     <img src="uitm.JPEG" alt="UITM SEGAMAT">
+  </div>
+</div>
+
+<ol>
+  <li>
+     <h3> Higher Education </h3>
+     <ul>
+       <li>Institution : Universiti Teknologi Mara (UiTM) Segamat, Johor </li>
+       <li>Location : UiTM Cawangan Johor, Kampus Segamat, Jalan Universiti Off, KM 12, Jalan Muar, Kemajuan Tanah Jementah Batu Sebelas, 85000 Segamat, Johor Darul Ta'zim</li> 
+       <li>Year : 2023 - Present </li>
+     </ul>
+   </li> 
+ </ol>
+
+
+ 
+
+</section>
+
+
+<footer class="site-footer">
+    <p>© 2025 Nurin Syazwani Binti Jasni. All Rights Reserved.</p>
+    <p>Last updated: 16 December 2025</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/honeyy.ryn?igsh=Z2F1OHd2cjUyZ2s0&utm_source=qr">IG</a> |
+      <a href="https://www.tiktok.com/@weeen_sye?_r=1&_t=ZS-92EMzleQw4N">TikTok</a> |
+      <a href="https://wa.me/601116855018">WhatsApp</a>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

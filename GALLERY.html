@@ -1,0 +1,118 @@
+<html>
+
+<head> 
+
+<link rel="stylesheet" type="text/css" href="design.css" />
+<title> GALLERY </title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<header>
+
+<h1><b> MY GALLERY <b></h1>
+<i><marquee>Welcome to My Resume Page. Take your time and explore &#9829! </marquee></i>
+
+
+</header>
+
+<nav>
+
+ <ul class="navbar">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="BIODATA.html" target="_blank">BIODATA</a></li>
+    <li><a href="EXPERIENCE.html" target="_blank">EXPERIENCE</a></li>
+    <li><a href="EDC.html" target="_blank">EDUCATION</a></li>
+    <li><a href="FAMILY.html" target="_blank">FAMILY</a></li>
+    <li><a href="GALLERY.html" target="_blank">GALLERY</a></li>
+    <li><a href="ENTERTAINMENT.html" target="_blank">ENTERTAINMENT</a></li>
+
+ </ul>
+</nav>
+
+ <div id="datetime-simple"></div>
+
+  <script>
+
+function updateDateTime() {
+  const now = new Date();
+
+  const day = now.getDate();
+  const month = now.toLocaleString('en-US', { month: 'short' });
+  const year = now.getFullYear();
+  const hours = now.getHours().toString().padStart(2,'0');
+  const minutes = now.getMinutes().toString().padStart(2,'0');
+  const seconds = now.getSeconds().toString().padStart(2,'0');
+
+  document.getElementById("datetime-simple").innerText =
+    `📅 ${day} ${month} ${year} | 🕑  ${hours}:${minutes}:${seconds}`;
+}
+
+setInterval(updateDateTime, 1000);
+updateDateTime();
+
+</script>
+
+
+<section>
+
+<div class="main-content">
+     <div class="gallery-box">
+     <div class="quick-links">
+
+     <a class="card-link" href="MYSELF.html">
+        <div class="card"
+        <h3><span class="emoji">&#128525; </span>MYSELF</h3> 
+        <p><em> Just Me, Being Me !</em></p>
+        </div>
+
+     </a>
+
+     <a class="card-link" href="FOOD.html">
+   	<div class="card">
+  	<h3><span class="emoji"> &#x1F354;</span>FOOD</h3>
+   	<p><em> Sweet bites and Tasty Delights ! </em></p></div>
+     </a> 
+
+     <a class="card-link" href="Friends.html">
+  	<div class="card"> 
+   	<h3><span class="emoji"> &#129505;</span>FRIENDS</h3>
+   	<p><em> Moments With My People ! </em></p></div>
+     </a>
+
+    <a class="card-link" href="LENS.html">
+       <div class="card" >
+       <h3><span class="emoji">&#128247;</span>LENS</h3>
+       <p><em> Through my lens ! </em></p></div>
+    </a> 
+
+    <a class="card-link" href="FAMGALLERY.html">
+       <div class="card">
+       <h3><span class="emoji">&#129392; </span>FAMGALLERY </h3>
+       <p><em> Explore my gallery !</em></p></div>
+   </a> 
+
+   </div>
+ </div>
+</div>
+
+
+</section>
+
+
+<footer class="site-footer">
+    <p>© 2025 Nurin Syazwani Binti Jasni. All Rights Reserved.</p>
+    <p>Last updated: 16 December 2025</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/honeyy.ryn?igsh=Z2F1OHd2cjUyZ2s0&utm_source=qr">IG</a> |
+      <a href="https://www.tiktok.com/@weeen_sye?_r=1&_t=ZS-92EMzleQw4N">TikTok</a> |
+      <a href="https://wa.me/601116855018">WhatsApp</a>
+    </div>
+  </footer>
+</body>
+
+</html>

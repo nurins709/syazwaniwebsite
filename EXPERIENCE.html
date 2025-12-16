@@ -1,0 +1,179 @@
+<html>
+
+<head> 
+<link rel="stylesheet" type="text/css" href="design.css" />
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<title> EXPERIENCE </title>
+
+</head>
+
+<body> 
+
+<header>
+
+<h1><b> MY EXPRIENCES JOURNEY <b></h1>
+<i><marquee>Welcome to My Resume Page. Take your time and explore &#9829! </marquee></i>
+
+</header>
+
+<nav>
+
+ <ul class="navbar">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="BIODATA.html" target="_blank">BIODATA</a></li>
+    <li><a href="EXPERIENCE.html" target="_blank">EXPERIENCE</a></li>
+    <li><a href="EDC.html" target="_blank">EDUCATION</a></li>
+    <li><a href="FAMILY.html" target="_blank">FAMILY</a></li>
+    <li><a href="GALLERY.html" target="_blank">GALLERY</a></li>
+    <li><a href="ENTERTAINMENT.html" target="_blank">ENTERTAINMENT</a></li>
+
+ </ul>
+
+</nav>
+
+ <div id="datetime-simple"></div>
+
+  <script>
+
+function updateDateTime() {
+  const now = new Date();
+
+  const day = now.getDate();
+  const month = now.toLocaleString('en-US', { month: 'short' });
+  const year = now.getFullYear();
+  const hours = now.getHours().toString().padStart(2,'0');
+  const minutes = now.getMinutes().toString().padStart(2,'0');
+  const seconds = now.getSeconds().toString().padStart(2,'0');
+
+  document.getElementById("datetime-simple").innerText =
+    `📅 ${day} ${month} ${year} | 🕑  ${hours}:${minutes}:${seconds}`;
+}
+
+setInterval(updateDateTime, 1000);
+updateDateTime();
+
+</script>
+
+
+
+
+
+<section>
+
+<div class="experience-box">
+
+<h2> Internship Experience </h2>
+
+<br>
+
+<div class="row">
+   <div class="column">
+      <img src="intern.JPEG"> 
+   </div>
+   <div class="column">
+      <img src="intern1.JPEG"> 
+   </div>
+</div> 
+
+<ol class="inner-list">
+  <li><b> Internship Role : </b>
+    <span class="line"></span>
+      <p>Medical Records Intern</p>
+  </li>
+  <li><b> Organization Name : </b>
+    <span class="line"></span>
+      <p>Hospital Sultanah Nora Ismail, Batu Pahat</p>
+  </li>
+  <li><b> Duration : </b>
+    <span class="line"></span>
+      <p>28<sup>th</sup> July - 19<sup>th</sup> September</p>
+  </li>
+  <li><b> Key Responsibilities : </b>
+    <span class="line"></span>
+    <br>
+      <ul class="inner-list">
+          <li>Responsible for handling medical records in accordance with rules and guidelines.</li>
+          <li>Managed the entire process of patient's medical reports from start to finish.</li>
+          <li>Entered important and confidential patient data accurately into the system.</li>
+      </ul>
+  </li>
+  <li><b> Skills Gained : </b>
+    <span class="line"></span>
+    <br>
+      <ul class="inner-list">
+          <li>Communication skills: Improved confidence when dealing with staff.</li>
+          <li>Time management: Became more disciplined in managing time.</li>
+          <li>Technical skills: Gained confidence in using the provided systems.</li>
+      </ul>
+  </li>
+</ol>
+
+<br><br>
+
+<h2> Outreach Program Experience </h2>
+
+<br>
+
+<div class="row">
+   <div class="column">
+      <img src="po.JPEG"> 
+   </div>
+   <div class="column">
+      <img src="pob.JPEG"> 
+   </div>
+</div> 
+
+<ol>
+  <li><span class="label"> Program Title : </span></b>
+    <span class="line"></span>
+      <p>"Be The Voice, Stop The Hurt 2025" : <em>Bully, Racist and Sexual Harassment Program Awareness</em></p>
+  </li>
+  <li><b> Location : </b>
+    <span class="line"></span>
+      <p>SMK Malim, Melaka</p>
+  </li>
+  <li><b> Role :  </b>
+    <span class="line"></span>
+      <p>Committee member & Facilitator Program</p>
+  </li>
+  <li><b> Duration : </b>
+    <span class="line"></span>
+      <p>3<sup>th</sup> December 2025</p>
+  </li>
+  <li><b> Key Responsibilities : </b>
+    <span class="line"></span>
+      <br>
+      <ul>
+          <li>Managed students and ensured program ran smoothly.</li>
+          <li>Coordinated activity flow together with the program team.</li>
+          <li>Overcame fear and improved communication when handling large groups of participants.</li>
+      </ul>
+  </li>
+  <li><b>  Skills Gained : </b>
+    <span class="line"></span>
+      <br>
+      <ul>
+          <li>Leadership: Became more confident in leading and giving instructions.</li>
+          <li>Communication: Able to interact with students without fear.</li>
+          <li>Teamwork: Collaborated effectively to ensure the program ran smoothly.</li>
+          <li>Problem-solving: Quickly adapted during unexpected or chaotic situations.</li>
+      </ul>
+  </li>
+</ol>
+
+</section>
+
+<footer class="site-footer">
+    <p>© 2025 Nurin Syazwani Binti Jasni. All Rights Reserved.</p>
+    <p>Last updated: 16 December 2025</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/honeyy.ryn?igsh=Z2F1OHd2cjUyZ2s0&utm_source=qr">IG</a> |
+      <a href="https://www.tiktok.com/@weeen_sye?_r=1&_t=ZS-92EMzleQw4N">TikTok</a> |
+      <a href="https://wa.me/601116855018">WhatsApp</a>
+    </div>
+  </footer>
+
+</body>
+</html>

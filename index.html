@@ -1,0 +1,211 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="design.css" />
+<title> HOME </title> 
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+</head>
+
+<body onclick="playMusic()">
+
+<audio id="bg-music" loop>
+       <source src="song.MP3" type="audio/mpeg">
+   </audio>
+
+
+
+<header>
+
+<h1><b> HOME <b></h1>
+<i><marquee>Welcome to My Resume Page. Take your time and explore &#9829! </marquee></i>
+
+</header>
+
+<nav>
+
+ <ul class="navbar">
+    <li><a href="index.html" target="_blank">HOME</a></li>
+    <li><a href="BIODATA.html" target="_blank">BIODATA</a></li>
+    <li><a href="EXPERIENCE.html" target="_blank">EXPERIENCE</a></li>
+    <li><a href="EDC.html" target="_blank">EDUCATION</a></li>
+    <li><a href="FAMILY.html" target="_blank">FAMILY</a></li>
+    <li><a href="GALLERY.html" target="_blank">GALLERY</a></li>
+    <li><a href="ENTERTAINMENT.html" target="_blank">ENTERTAINMENT</a></li>
+
+ </ul>
+
+</nav>
+
+  <div id="datetime-simple"></div>
+
+  <script>
+
+function updateDateTime() {
+  const now = new Date();
+
+  const day = now.getDate();
+  const month = now.toLocaleString('en-US', { month: 'short' });
+  const year = now.getFullYear();
+  const hours = now.getHours().toString().padStart(2,'0');
+  const minutes = now.getMinutes().toString().padStart(2,'0');
+  const seconds = now.getSeconds().toString().padStart(2,'0');
+
+  document.getElementById("datetime-simple").innerText =
+    `📅 ${day} ${month} ${year} | 🕑  ${hours}:${minutes}:${seconds}`;
+}
+
+setInterval(updateDateTime, 1000);
+updateDateTime();
+
+</script>
+
+
+<button id="music-toggle" onclick="toggleMusic()" 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(50,50,50,0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 9999;
+">
+🎵
+</button>
+ 
+<script>
+
+const music = document.getElementById('bg-music');
+const toggleBtn = document.getElementById('music-toggle');
+
+
+music.volume = 0.3;
+
+
+const musicPlaying = sessionStorage.getItem('musicPlaying');
+if(musicPlaying === 'true'){
+    music.play().catch(()=>{});
+    toggleBtn.innerText = '🎵';
+}else if(musicPlaying === 'false'){
+    music.pause();
+    toggleBtn.innerText = '🔇';
+}
+
+
+document.body.addEventListener('click', function firstClick(){
+    if(!sessionStorage.getItem('musicClicked')){
+        music.play().catch(()=>{});
+        sessionStorage.setItem('musicPlaying', 'true');
+        sessionStorage.setItem('musicClicked', 'true');
+        toggleBtn.innerText = '🎵';
+    }
+    document.body.removeEventListener('click', firstClick);
+});
+
+
+function toggleMusic(){
+    if(music.paused){
+        music.play().catch(()=>{});
+        toggleBtn.innerText = '🎵';
+        sessionStorage.setItem('musicPlaying','true');
+    } else {
+        music.pause();
+        toggleBtn.innerText = '🔇';
+        sessionStorage.setItem('musicPlaying','false');
+    }
+}
+</script>
+
+
+<div class="home-background"></div>
+
+
+<section> 
+
+
+ <div class="content-section">
+   <div class="profile-wrapper">
+
+     <div class="profile-card">
+        <img src="me.JPEG" alt=" ME " width= "280" height="175" border="1"  HSPACE=50 align= center;>
+   <div class="container">
+    <h4><b> Nurin Syazwani Jasni </b></h4>
+  
+    <h4> An Information Management Student </h4>
+    </div>
+ </div>
+
+ <div class="description">
+
+   <h3> <em>  Hey there,  I'm <span style="color:#e11584;">Nurin</span>!<br>
+              I'm a creative soul who enjoys editing, photography, and planning for the future. <span style="color:#e11584;">✨ Welcome to my personal resume website! ✨</span>
+              Here, you'll find interesting personal information across  a variety of pages that describe more about me. I hope you enjoy your visit and get to know me better!.
+  </em> </h3>
+
+<br> 
+
+   <ul> 
+   <li> Editing Video and Cooking was my hobbies during my free time </li> <br> 
+   <li> I'm an introvert person but love to yapping with someone I'm comfortable with &#9829 !</li>
+   </ul>
+
+     
+ </div>
+ </div> 
+</div> 
+
+</div>
+
+<br>
+
+  <h4 class="connect-title">Let’s stay connected through my socials:</h4>
+
+  <br> 
+
+<div class="social-section">
+  <div class="social-item">
+    <img src="wassup.PNG" alt="WhatsApp" class="icon">
+    <span class="social-text">WhatsApp</span>
+    <a href="https://wa.me/601116855018" class="btn whatsapp">Chat</a>
+  </div>
+
+  <div class="social-item">
+    <img src="instagram.PNG" alt="Instagram" class="icon">
+    <span class="social-text">@honeyy.ryn</span>
+    <a href="https://www.instagram.com/honeyy.ryn?igsh=Z2F1OHd2cjUyZ2s0&utm_source=qr" class="btn instagram">Visit</a>
+  </div>
+
+  <div class="social-item">
+    <img src="tt.PNG" alt="TikTok" class="icon">
+    <span class="social-text">@ween_sye</span>
+    <a href="https://www.tiktok.com/@weeen_sye?_r=1&_t=ZS-92EMzleQw4N" class="btn tiktok">Watch</a>
+  </div>
+</div>
+</div>
+
+</section>
+
+</div>
+
+<footer class="site-footer">
+    <p>© 2025 Nurin Syazwani Binti Jasni. All Rights Reserved.</p>
+    <p>Last updated: 16 December 2025</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/honeyy.ryn?igsh=Z2F1OHd2cjUyZ2s0&utm_source=qr">IG</a> |
+      <a href="https://www.tiktok.com/@weeen_sye?_r=1&_t=ZS-92EMzleQw4N">TikTok</a> |
+      <a href="https://wa.me/601116855018">WhatsApp</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

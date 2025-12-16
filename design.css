@@ -150,7 +150,7 @@ sup {
     font-size: 20px;
     cursor: pointer;
     z-index: 9999;
-    box-shadow: 0 0 10px rgba(255,215,0,0.2); /* soft initial glow */
+    box-shadow: 0 0 10px rgba(255,215,0,0.2); 
     transition: all 0.3s ease;
 }
 
@@ -238,7 +238,7 @@ sup {
 /* IMAGE BACKGROUND*/
 
 .home-background {
-  background-image: url("background.jpg");
+  background-image: url("images/background.jpg");
   position: absolute;
   top: 0; left: 0;
   width: 100%;
@@ -1192,6 +1192,7 @@ ul.inner-list li p {
     color: #CABA9C;
     font-size: 14px;
 }
+
 
 
 

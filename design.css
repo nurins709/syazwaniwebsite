@@ -1,5 +1,6 @@
 /*GENERAL BODY*/
 body { 
+    background: red;
     font-family:'Quicksand', sans-serif;
     color: white;
     margin: 0;
@@ -175,7 +176,7 @@ sup {
   border-radius: 5px;
   padding: 20px;
   margin: 20px auto;
-  text-align; center;
+  text-align: center;
 }
 
 .profile-card:hover{
@@ -1191,5 +1192,6 @@ ul.inner-list li p {
     color: #CABA9C;
     font-size: 14px;
 }
+
 
 
